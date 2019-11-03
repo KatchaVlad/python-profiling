@@ -1,0 +1,11 @@
+Line #;Hits;Time;Per Hit;% Time;Line Contents
+10;;;;;def gini(list_of_values):
+11;;;;;    """
+12;;;;;    Compute Gini index, an indicator usually used for measurement of economic inequality
+13;;;;;    see : https://en.wikipedia.org/wiki/Gini_coefficient
+14;;;;;    """
+15;;;;; 
+16;1;89.0;89.0;44.9;    sorted_list = np.sort(list_of_values)
+17;1;100.0;100.0;50.5;    area, height = get_area(sorted_list)
+18;1;8.0;8.0;4.0;    fair_area = height * len(list_of_values) / 2.
+19;1;1.0;1.0;0.5;    return (fair_area - area) / fair_area
